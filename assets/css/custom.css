@@ -161,6 +161,14 @@
   margin-top: 2em;
 }
 
+#tags_social_row {
+  margin-bottom: 0.5em;
+}
+
+.read-next {
+  margin-top: 2em;
+}
+
 /* Larger than phone */
 @media (min-width: 550px) {
   .header {

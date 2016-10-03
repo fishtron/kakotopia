@@ -1,0 +1,15 @@
+{{! Everything inside the #author tags pulls data from the author }}
+{{#author}}
+  <div class="row">
+    <div class="two columns">
+      <img class="authorimage" src="{{image}}">
+    </div>
+    <div class="four columns">
+      <h4><span class="author-name"><a href="{{url}}">{{name}}</a></span></h4>
+      {{#if location}}<span class="author-location"><i class="fa fa-map-marker"></i> {{location}}</span>{{/if}}{{#if location & website}} | {{/if}}{{#if website}}<span class="website"><a href="{{website}}">{{website}}</a></span>{{/if}}
+    </div>
+    <div class="six columns">
+      <p>{{bio}}</p>
+    </div>
+  </div>
+{{/author}}
