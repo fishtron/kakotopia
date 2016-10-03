@@ -156,6 +156,10 @@
   font-weight: 300;
 }
 
+/* footer */
+#footer {
+  margin-top: 2em;
+}
 
 /* Larger than phone */
 @media (min-width: 550px) {
