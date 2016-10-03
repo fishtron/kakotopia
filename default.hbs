@@ -10,7 +10,7 @@
 
   <!-- Mobile Specific Metas
   ------------------------- -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- FONT
   ------------------------- -->
@@ -18,49 +18,51 @@
 
   <!-- CSS
   ------------------------- -->
-  {{! Styles'n'Scripts }}
-  <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
-  <link rel="stylesheet" type="text/css" href="{{asset "css/skeleton.css"}}" />
-  <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
-  <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}" />
-  
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/skeleton.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}" />
+
   <!-- JS
   ------------------------- -->
 
-  
+
 
   <!-- FAVICON
   ------------------------- -->
-  <link rel="shortcut icon" href="{{asset "/images/favicon.ico"}}">
-  
-  {{ghost_head}}
+    <link rel="shortcut icon" href="{{asset "/images/favicon.ico"}}">
+
+    {{ghost_head}}
   </head>
 
   <!-- BODY
   ------------------------- -->
-      
+
   <body class="{{body_class}} nav-closed">
 
-  
 		<div class="container">
-			
-			{{{body}}}
-			
-      
 
+			{{{body}}}
 
       <div class="container">
         <footer id="footer" class="twelve columns">
 		<br />
 		 <br />
-         <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> <span style="font-size: .8em; font-weight: 600;"><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA</a></span> {{date format="YYYY"}}</section>
-		 <a href="https://twitter.com/{{@blog.twitter}}"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="https://github.com/fishtron"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="{{@blog.url}}/rss"><i class="fa fa-rss" aria-hidden="true"></i></a>
 		 <br />
 		 <br />
+
+          <section class="copyright">
+            <a href="{{@blog.url}}">{{@blog.title}}</a> <span style="font-size: .8em; font-weight: 600;"><a href="http://www.wtfpl.net/">WTFPL</a></span> {{date format="YYYY"}}
+          </section>
+          <section class="social">
+	          <a href="https://twitter.com/{{@blog.twitter}}"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="https://github.com/fishtron"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="{{@blog.url}}/rss"><i class="fa fa-rss" aria-hidden="true"></i></a>
+          </section>
+
         </footer>
-      </div> <!-- end footer div.container -->
-    </div>  <!-- end footer div.table-block -->
-  
+      </div>
+    </div>
+
   {{ghost_foot}}
 </body>
 </html>
